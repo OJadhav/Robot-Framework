@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-11T05:09:59.494028" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment(Advarisk ) -Lead QA -Omkar Jadhav" source="C:\Users\Admin\PycharmProjects\Assignment(Advarisk ) -Lead QA -Omkar Jadhav">
+<suite id="s1-s1" name="Test Cases" source="C:\Users\Admin\PycharmProjects\Assignment(Advarisk ) -Lead QA -Omkar Jadhav\Test Cases">
+<suite id="s1-s1-s1" name="Checkout" source="C:\Users\Admin\PycharmProjects\Assignment(Advarisk ) -Lead QA -Omkar Jadhav\Test Cases\Checkout">
+<suite id="s1-s1-s1-s1" name="CkeckOut TestCases" source="C:\Users\Admin\PycharmProjects\Assignment(Advarisk ) -Lead QA -Omkar Jadhav\Test Cases\Checkout\CkeckOut_TestCases.robot">
+<test id="s1-s1-s1-s1-t1" name="Test Cases of CheckOut Function" line="14">
+<kw name="openlink" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:09:59.755022" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-11T05:09:59.755022" elapsed="2.966003"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-11T05:10:02.721025" elapsed="0.142002"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:09:59.754021" elapsed="3.110060"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-11T05:10:02.867033" elapsed="0.001024"/>
+</kw>
+<kw name="Login Website">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:02.871025" level="INFO">Typing text 'standard_user' into text field 'xpath://input[@id='user-name']'.</msg>
+<arg>xpath://input[@id='user-name']</arg>
+<arg>${webusername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:02.870026" elapsed="3.193601"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:06.063627" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@id='password']'.</msg>
+<arg>xpath://input[@id='password']</arg>
+<arg>${webpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:06.063627" elapsed="3.163902"/>
+</kw>
+<kw name="Login Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:09.229418" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<arg>xpath://input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:09.228427" elapsed="3.175537"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:10:09.227529" elapsed="3.177447"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2024-03-11T05:10:02.869026" elapsed="9.535950"/>
+</kw>
+<kw name="CheckOut Button is visible on Cart Page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:12.411971" level="INFO">Clicking element 'xpath://div[text()='Sauce Labs Backpack']'.</msg>
+<arg>xpath://div[text()='Sauce Labs Backpack']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:12.409966" elapsed="2.152923"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='add-to-cart-sauce-labs-backpack']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:10:14.562889" elapsed="2.048552"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:16.613345" level="INFO">Clicking element 'xpath://button[@id='add-to-cart-sauce-labs-backpack']'.</msg>
+<arg>xpath://button[@id='add-to-cart-sauce-labs-backpack']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:16.612360" elapsed="2.098304"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:20.738816" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
+<arg>Sauce Labs Backpack</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:10:18.710664" elapsed="2.028152"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//a[@class='shopping_cart_link']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:10:20.739756" elapsed="2.056679"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:22.797359" level="INFO">Clicking element 'xpath://div[@id='shopping_cart_container']'.</msg>
+<arg>xpath://div[@id='shopping_cart_container']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:22.796435" elapsed="2.100348"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:26.934815" level="INFO">Current page contains text 'Your Cart'.</msg>
+<arg>Your Cart</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:10:24.896783" elapsed="2.038032"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:28.986914" level="INFO">Element 'xpath://button[@id='checkout']' is displayed.</msg>
+<arg>xpath://button[@id='checkout']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:10:26.934815" elapsed="2.052099"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:10:12.407969" elapsed="16.578945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T05:10:31.989268" level="INFO">Slept 3 seconds.</msg>
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T05:10:28.987821" elapsed="3.001447"/>
+</kw>
+<kw name="Click on Checkout Button Personal Information need to fill for Shipping">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:31.992269" level="INFO">Clicking button 'xpath://button[@id='checkout']'.</msg>
+<arg>xpath://button[@id='checkout']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:31.991267" elapsed="5.144077"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:39.163245" level="INFO">Current page contains text 'Checkout: Your Information'.</msg>
+<arg>Checkout: Your Information</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:10:37.135344" elapsed="2.027901"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='First Name']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:10:39.163245" elapsed="2.042116"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='First Name']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-03-11T05:10:41.205361" elapsed="3.072970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:44.279282" level="INFO">Clicking element 'xpath://input[@placeholder='First Name']'.</msg>
+<arg>xpath://input[@placeholder='First Name']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:44.279282" elapsed="2.071321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:46.350603" level="INFO">Typing text 'Omkar' into text field 'xpath://input[@placeholder='First Name']'.</msg>
+<arg>xpath://input[@placeholder='First Name']</arg>
+<arg>Omkar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:46.350603" elapsed="3.137350"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:49.488927" level="INFO">Typing text 'Jadhav' into text field 'xpath://input[@placeholder='Last Name']'.</msg>
+<arg>xpath://input[@placeholder='Last Name']</arg>
+<arg>Jadhav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:49.487953" elapsed="3.174228"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:52.664186" level="INFO">Typing text '411019' into text field 'xpath://input[@placeholder='Zip/Postal Code']'.</msg>
+<arg>xpath://input[@placeholder='Zip/Postal Code']</arg>
+<arg>411019</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:52.663188" elapsed="3.158182"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:10:55.822271" level="INFO">Clicking element 'xpath://input[@id='continue']'.</msg>
+<arg>xpath://input[@id='continue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:10:55.821370" elapsed="2.116496"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:10:31.991267" elapsed="25.947526"/>
+</kw>
+<kw name="After filling personal details and continue user is on Checkout overview page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()='Checkout: Overview']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:10:57.941740" elapsed="2.055600"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:02.021880" level="INFO">Current page contains text 'Checkout: Overview'.</msg>
+<arg>Checkout: Overview</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:10:59.997340" elapsed="2.024540"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:10:57.940744" elapsed="4.081136"/>
+</kw>
+<kw name="On Checkout overview page Finish button is visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='finish']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:02.022884" elapsed="2.027562"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:06.072606" level="INFO">Element 'xpath://button[@id='finish']' is displayed.</msg>
+<arg>xpath://button[@id='finish']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:04.050446" elapsed="2.022160"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:02.021880" elapsed="4.050726"/>
+</kw>
+<kw name="On Checkout overview page Cancel button is visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='cancel']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:06.073519" elapsed="2.037867"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:10.136486" level="INFO">Element 'xpath://button[@id='cancel']' is displayed.</msg>
+<arg>xpath://button[@id='cancel']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:08.111386" elapsed="2.025100"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:06.073519" elapsed="4.062967"/>
+</kw>
+<kw name="Item Summary can visible on Checkout overview page">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:12.152751" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
+<arg>Sauce Labs Backpack</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:10.137488" elapsed="2.015263"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:10.137488" elapsed="2.015263"/>
+</kw>
+<kw name="Checkout Overview page contains Payments, Shipping and Price details">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:14.173061" level="INFO">Current page contains text 'Payment Information'.</msg>
+<arg>Payment Information</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:12.153753" elapsed="2.019308"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:16.217232" level="INFO">Current page contains text 'Shipping Information'.</msg>
+<arg>Shipping Information</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:14.173940" elapsed="2.043292"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:18.252707" level="INFO">Current page contains text 'Price Total'.</msg>
+<arg>Price Total</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:16.217232" elapsed="2.035475"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:12.152751" elapsed="6.100948"/>
+</kw>
+<kw name="Clicking on Finish Button got message">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:18.256694" level="INFO">Clicking button 'xpath://button[@id='finish']'.</msg>
+<arg>xpath://button[@id='finish']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:11:18.255698" elapsed="5.143025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//span[text()='Checkout: Complete!']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:23.399666" elapsed="2.049996"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:27.480306" level="INFO">Current page contains text 'Checkout: Complete!'.</msg>
+<arg>Checkout: Complete!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:25.449662" elapsed="2.030644"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:18.254700" elapsed="9.225606"/>
+</kw>
+<kw name="Back to Home button is visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[@id='back-to-products']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:27.482311" elapsed="2.037005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:29.520215" level="INFO">Clicking element '//button[@id='back-to-products']'.</msg>
+<arg>//button[@id='back-to-products']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:11:29.519316" elapsed="2.105693"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:27.482311" elapsed="4.142698"/>
+</kw>
+<kw name="Logout Website">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:33.664574" level="INFO">Current page contains text 'Swag Labs'.</msg>
+<arg>Swag Labs</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-11T05:11:31.627897" elapsed="2.036677"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:33.666434" level="INFO">Clicking button 'xpath://button[@id='react-burger-menu-btn']'.</msg>
+<arg>xpath://button[@id='react-burger-menu-btn']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:11:33.665448" elapsed="5.183156"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[@id='logout_sidebar_link']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-11T05:11:38.849480" elapsed="2.064462"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T05:11:40.914846" level="INFO">Clicking element 'xpath://a[@id='logout_sidebar_link']'.</msg>
+<arg>xpath://a[@id='logout_sidebar_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T05:11:40.913942" elapsed="2.088651"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:31.626900" elapsed="11.376692"/>
+</kw>
+<kw name="closelink" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-11T05:11:43.006596" elapsed="3.170928"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:11:43.005596" elapsed="3.172936"/>
+</kw>
+<status status="PASS" start="2024-03-11T05:09:59.753023" elapsed="106.426498"/>
+</test>
+<status status="PASS" start="2024-03-11T05:09:59.539024" elapsed="106.645490"/>
+</suite>
+<status status="PASS" start="2024-03-11T05:09:59.537022" elapsed="106.652495"/>
+</suite>
+<status status="PASS" start="2024-03-11T05:09:59.534022" elapsed="106.658492"/>
+</suite>
+<status status="PASS" start="2024-03-11T05:09:59.497024" elapsed="106.699487"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment(Advarisk ) -Lead QA -Omkar Jadhav">Assignment(Advarisk ) -Lead QA -Omkar Jadhav</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Cases">Assignment(Advarisk ) -Lead QA -Omkar Jadhav.Test Cases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Checkout">Assignment(Advarisk ) -Lead QA -Omkar Jadhav.Test Cases.Checkout</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="CkeckOut TestCases">Assignment(Advarisk ) -Lead QA -Omkar Jadhav.Test Cases.Checkout.CkeckOut TestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
