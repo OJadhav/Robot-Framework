@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-12T16:35:37.733182" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="C:\Users\Admin\PycharmProjects\RobotFramework">
+<suite id="s1-s1" name="pythonProject" source="C:\Users\Admin\PycharmProjects\RobotFramework\pythonProject">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Admin\PycharmProjects\RobotFramework\pythonProject\Tests">
+<suite id="s1-s1-s1-s1" name="GoogleSearch" source="C:\Users\Admin\PycharmProjects\RobotFramework\pythonProject\Tests\GoogleSearch.robot">
+<test id="s1-s1-s1-s1-t1" name="Google" line="14">
+<kw name="opengoogle">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-12T16:35:39.121084" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-12T16:35:39.121084" elapsed="13.920966"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-12T16:35:53.044049" elapsed="0.287004"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-12T16:35:58.334235" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-12T16:35:53.331053" elapsed="5.003182"/>
+</kw>
+<status status="PASS" start="2024-03-12T16:35:39.119084" elapsed="19.215151"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-12T16:35:58.339236" level="INFO">Typing text 'Amazon' into text field 'xpath://textarea[@name='q']'.</msg>
+<arg>xpath://textarea[@name='q']</arg>
+<arg>Amazon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T16:35:58.338235" elapsed="0.530613"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-12T16:36:00.921414" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-12T16:35:58.919847" elapsed="2.001567"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-12T16:36:00.938410" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<arg>xpath://input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T16:36:00.937407" elapsed="3.515506"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-12T16:36:10.490236" level="INFO">Slept 6 seconds.</msg>
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-12T16:36:04.490192" elapsed="6.000044"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-12T16:36:10.938237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test1.png"&gt;&lt;img src="Test1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>Test1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-12T16:36:10.507234" elapsed="0.432002"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-12T16:36:10.984236" level="INFO">${command} = python CaptureScreenShot.py C:/Users/Admin/PycharmProjects/RobotFramework/screenshot.png</msg>
+<var>${command}</var>
+<arg>${PYTHON} ${PYTHON_SCRIPT} ${SCREENSHOT_PATH}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-12T16:36:10.982237" elapsed="0.001999"/>
+</kw>
+<kw name="Run" owner="OperatingSystem">
+<msg time="2024-03-12T16:36:10.998237" level="INFO">Running command 'python CaptureScreenShot.py C:/Users/Admin/PycharmProjects/RobotFramework/screenshot.png 2&gt;&amp;1'.</msg>
+<msg time="2024-03-12T16:36:12.169618" level="INFO">${output} = python: can't open file 'C:\\Users\\Admin\\PycharmProjects\\RobotFramework\\CaptureScreenShot.py': [Errno 2] No such file or directory</msg>
+<var>${output}</var>
+<arg>${command}</arg>
+<doc>Runs the given command in the system and returns the output.</doc>
+<status status="PASS" start="2024-03-12T16:36:10.985236" elapsed="1.184382"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-12T16:36:12.191624" level="INFO">Screenshot saved to: python: can't open file 'C:\\Users\\Admin\\PycharmProjects\\RobotFramework\\CaptureScreenShot.py': [Errno 2] No such file or directory</msg>
+<arg>Screenshot saved to: ${output}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-12T16:36:12.191624" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${SCREENSHOT_PATH}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-12T16:36:12.193623" elapsed="0.001000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-12T16:36:14.231328" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-12T16:36:12.229622" elapsed="2.001706"/>
+</kw>
+<kw name="closebrowserwindow">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-12T16:36:14.262331" elapsed="14.034000"/>
+</kw>
+<status status="PASS" start="2024-03-12T16:36:14.261328" elapsed="14.036005"/>
+</kw>
+<doc>Take a screenshot of the entire screen</doc>
+<status status="PASS" start="2024-03-12T16:35:39.098088" elapsed="49.217246"/>
+</test>
+<status status="PASS" start="2024-03-12T16:35:38.032181" elapsed="50.289152"/>
+</suite>
+<status status="PASS" start="2024-03-12T16:35:38.003177" elapsed="50.349211"/>
+</suite>
+<status status="PASS" start="2024-03-12T16:35:37.955177" elapsed="50.401208"/>
+</suite>
+<status status="PASS" start="2024-03-12T16:35:37.736224" elapsed="50.656436"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="pythonProject">RobotFramework.pythonProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">RobotFramework.pythonProject.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="GoogleSearch">RobotFramework.pythonProject.Tests.GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-12T16:35:37.459455" level="WARN">Error in file 'C:\Users\Admin\PycharmProjects\RobotFramework\pythonProject\Tests\UseArguments.robot' on line 25: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
